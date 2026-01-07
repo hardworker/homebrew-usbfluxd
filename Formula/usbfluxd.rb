@@ -18,7 +18,6 @@ class Usbfluxd < Formula
 
   def install
     ENV.prepend_path "PATH", Formula["pkgconf"].opt_bin
-    ENV["PKG_CONFIG"] = Formula["pkgconf"].opt_bin/"pkgconf"
     system "./autogen.sh"
     system "./configure", *std_configure_args, "--disable-silent-rules"
     system "make", "install"
