@@ -4,8 +4,9 @@
 class Usbfluxd < Formula
   desc "Redirects usbmuxd socket to allow remote iOS device connections"
   homepage "https://github.com/corellium/usbfluxd"
-  url "https://github.com/corellium/usbfluxd/archive/refs/tags/v1.0.tar.gz"
-  sha256 "ee76f81a30247288f3880f1d54815447dc43cc667a3db10c0ae677d700ff89bb"
+  url "https://github.com/corellium/usbfluxd.git",
+      revision: "608cb24e08135f7b365ace7e9cfa54243838e508"
+  version "1.2.1"
   license any_of: ["GPL-2.0-only", "GPL-3.0-only"]
 
   depends_on "autoconf" => :build
